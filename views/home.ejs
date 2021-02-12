@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Tutorials</title>
+    <style>
+        nav { 
+            background-color: blue;
+            color: white;
+            text: white;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <% if (user) { %>
+            <li><a href="/auth/login">Log Out</a></li>
+            <% } else { %> 
+            <li><a href="/auth/login">Login</a></li>
+            <% } %>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Net Ninja</h1>
+        <h2>Homepage</h2>
+    </header>
+    <main>
+        <p>blah blah blah</p>
+    </main>
+</body>
+</html>
